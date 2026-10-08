@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rita Magdy | Frontend Developer</title>
-    
+
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -41,12 +43,22 @@
         }
     </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .section-padding { padding-top: 5rem; padding-bottom: 5rem; }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
         /* Offset for fixed header when scrolling */
-        section { scroll-margin-top: 4rem; } 
+        section {
+            scroll-margin-top: 4rem;
+        }
     </style>
 </head>
+
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-navy-800 selection:text-white">
 
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-200">
@@ -57,11 +69,16 @@
                 </div>
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#about" class="text-slate-600 hover:text-navy-900 font-medium transition-colors">About</a>
-                    <a href="#skills" class="text-slate-600 hover:text-navy-900 font-medium transition-colors">Skills</a>
-                    <a href="#experience" class="text-slate-600 hover:text-navy-900 font-medium transition-colors">Experience</a>
-                    <a href="#projects" class="text-slate-600 hover:text-navy-900 font-medium transition-colors">Projects</a>
-                    <a href="#education" class="text-slate-600 hover:text-navy-900 font-medium transition-colors">Education</a>
-                    <a href="#contact" class="bg-navy-900 text-white px-5 py-2 rounded-lg font-medium hover:bg-navy-800 transition-colors shadow-sm">Contact</a>
+                    <a href="#skills"
+                        class="text-slate-600 hover:text-navy-900 font-medium transition-colors">Skills</a>
+                    <a href="#experience"
+                        class="text-slate-600 hover:text-navy-900 font-medium transition-colors">Experience</a>
+                    <a href="#projects"
+                        class="text-slate-600 hover:text-navy-900 font-medium transition-colors">Projects</a>
+                    <a href="#education"
+                        class="text-slate-600 hover:text-navy-900 font-medium transition-colors">Education</a>
+                    <a href="#contact"
+                        class="bg-navy-900 text-white px-5 py-2 rounded-lg font-medium hover:bg-navy-800 transition-colors shadow-sm">Contact</a>
                 </div>
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
@@ -74,37 +91,48 @@
         <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#about" class="block px-3 py-2 text-slate-600 font-medium hover:text-navy-900 hover:bg-slate-50 rounded-md">About</a>
-                <a href="#skills" class="block px-3 py-2 text-slate-600 font-medium hover:text-navy-900 hover:bg-slate-50 rounded-md">Skills</a>
-                <a href="#experience" class="block px-3 py-2 text-slate-600 font-medium hover:text-navy-900 hover:bg-slate-50 rounded-md">Experience</a>
-                <a href="#projects" class="block px-3 py-2 text-slate-600 font-medium hover:text-navy-900 hover:bg-slate-50 rounded-md">Projects</a>
-                <a href="#education" class="block px-3 py-2 text-slate-600 font-medium hover:text-navy-900 hover:bg-slate-50 rounded-md">Education</a>
-                <a href="#contact" class="block px-3 py-2 text-navy-900 font-bold hover:bg-slate-50 rounded-md">Contact</a>
+                <a href="#about"
+                    class="block px-3 py-2 text-slate-600 font-medium hover:text-navy-900 hover:bg-slate-50 rounded-md">About</a>
+                <a href="#skills"
+                    class="block px-3 py-2 text-slate-600 font-medium hover:text-navy-900 hover:bg-slate-50 rounded-md">Skills</a>
+                <a href="#experience"
+                    class="block px-3 py-2 text-slate-600 font-medium hover:text-navy-900 hover:bg-slate-50 rounded-md">Experience</a>
+                <a href="#projects"
+                    class="block px-3 py-2 text-slate-600 font-medium hover:text-navy-900 hover:bg-slate-50 rounded-md">Projects</a>
+                <a href="#education"
+                    class="block px-3 py-2 text-slate-600 font-medium hover:text-navy-900 hover:bg-slate-50 rounded-md">Education</a>
+                <a href="#contact"
+                    class="block px-3 py-2 text-navy-900 font-bold hover:bg-slate-50 rounded-md">Contact</a>
             </div>
         </div>
     </nav>
 
     <main>
-        <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center min-h-[90vh]">
+        <section id="hero"
+            class="pt-32 pb-20 md:pt-40 md:pb-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center min-h-[90vh]">
             <div class="max-w-3xl">
                 <p class="text-blue-600 font-semibold tracking-wide mb-3 uppercase text-sm flex items-center">
                     <i class="fas fa-map-marker-alt mr-2"></i> Alexandria, Egypt • Ready to Relocate
                 </p>
                 <h1 class="text-5xl md:text-7xl font-extrabold text-navy-900 tracking-tight leading-tight mb-6">
-                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-navy-900 to-blue-600">Rita Magdy</span>.
+                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-navy-900 to-blue-600">Rita
+                        Magdy</span>.
                 </h1>
                 <h2 class="text-2xl md:text-4xl font-semibold text-slate-600 mb-6">
                     Frontend Developer & E-Commerce Specialist.
                 </h2>
                 <p class="text-lg text-slate-600 mb-10 max-w-2xl leading-relaxed">
-                    I build responsive websites, mobile applications, and comprehensive e-commerce solutions. Experienced in transforming complex payment  requirements into seamless, functional digital products.
+                    I build responsive websites, mobile applications, and comprehensive e-commerce solutions.
+                    Experienced in transforming complex payment requirements into seamless, functional digital products.
                 </p>
-                
+
                 <div class="flex flex-wrap gap-4">
-                    <a href="#contact" class="bg-navy-900 text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-navy-800 transition-all shadow-md hover:shadow-lg flex items-center">
+                    <a href="#contact"
+                        class="bg-navy-900 text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-navy-800 transition-all shadow-md hover:shadow-lg flex items-center">
                         <i class="fas fa-paper-plane mr-2"></i> Get In Touch
                     </a>
-                    <a href="#projects" class="bg-white text-navy-900 border border-slate-300 px-8 py-3.5 rounded-lg font-semibold hover:bg-slate-50 transition-all shadow-sm flex items-center">
+                    <a href="#projects"
+                        class="bg-white text-navy-900 border border-slate-300 px-8 py-3.5 rounded-lg font-semibold hover:bg-slate-50 transition-all shadow-sm flex items-center">
                         <i class="fas fa-code mr-2"></i> View Work
                     </a>
                 </div>
@@ -115,7 +143,8 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row gap-12 items-center">
                     <div class="w-full md:w-1/3">
-                        <div class="aspect-square bg-navy-50 rounded-2xl flex items-center justify-center text-navy-800 text-9xl relative overflow-hidden shadow-inner border border-slate-100">
+                        <div
+                            class="aspect-square bg-navy-50 rounded-2xl flex items-center justify-center text-navy-800 text-9xl relative overflow-hidden shadow-inner border border-slate-100">
                             <i class="fas fa-laptop-code opacity-20 absolute scale-150"></i>
                             <i class="fas fa-user-astronaut relative z-10"></i>
                         </div>
@@ -125,19 +154,27 @@
                             <i class="fas fa-user-circle text-blue-600 mr-3"></i> About Me
                         </h2>
                         <p class="text-slate-600 text-lg leading-relaxed mb-6">
-                            I am a passionate Frontend Developer with hands-on experience building responsive websites, e-commerce solutions, and mobile applications using HTML, CSS, JavaScript, WordPress, Elementor, Shopify Liquid, Flutter, and Dart.
+                            I am a passionate Frontend Developer with hands-on experience building responsive websites,
+                            e-commerce solutions, and mobile applications using HTML, CSS, JavaScript, WordPress,
+                            Elementor, Shopify Liquid, Flutter, and Dart.
                         </p>
                         <p class="text-slate-600 text-lg leading-relaxed mb-6">
-                            My expertise lies in integrating RESTful APIs, implementing responsive UI/UX, and translating business requirements into functional digital products. Currently, I balance my practical development experience at Weagles Marketing with technical instruction at iSchool, teaching web, mobile, and AI/ML fundamentals to the next generation of coders.
+                            My expertise lies in integrating RESTful APIs, implementing responsive UI/UX, and
+                            translating business requirements into functional digital products. Currently, I balance my
+                            practical development experience at Weagles Marketing with technical instruction at iSchool,
+                            teaching web, mobile, and AI/ML fundamentals to the next generation of coders.
                         </p>
                         <div class="flex items-center space-x-6 mt-8">
-                            <a href="https://github.com/ritamagdy22" target="_blank" class="text-slate-600 hover:text-navy-900 text-2xl transition-colors">
+                            <a href="https://github.com/ritamagdy22" target="_blank"
+                                class="text-slate-600 hover:text-navy-900 text-2xl transition-colors">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="https://linkedin.com/in/rita-magdy" target="_blank" class="text-slate-600 hover:text-blue-700 text-2xl transition-colors">
+                            <a href="https://linkedin.com/in/rita-magdy" target="_blank"
+                                class="text-slate-600 hover:text-blue-700 text-2xl transition-colors">
                                 <i class="fab fa-linkedin"></i>
                             </a>
-                            <a href="mailto:ritamagdy99@gmail.com" class="text-slate-600 hover:text-red-500 text-2xl transition-colors">
+                            <a href="mailto:ritamagdy99@gmail.com"
+                                class="text-slate-600 hover:text-red-500 text-2xl transition-colors">
                                 <i class="fas fa-envelope"></i>
                             </a>
                         </div>
@@ -151,72 +188,110 @@
                 <h2 class="text-3xl font-bold text-navy-900 mb-10 text-center flex items-center justify-center">
                     <i class="fas fa-tools text-blue-600 mr-3"></i> Technical Skills
                 </h2>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Skill Category -->
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                        <h3 class="text-xl font-semibold text-navy-800 mb-4 border-b border-slate-100 pb-2">Frontend</h3>
+                        <h3 class="text-xl font-semibold text-navy-800 mb-4 border-b border-slate-100 pb-2">Frontend
+                        </h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-navy-50 text-navy-800 rounded-full text-sm font-medium border border-navy-100">HTML5</span>
-                            <span class="px-3 py-1 bg-navy-50 text-navy-800 rounded-full text-sm font-medium border border-navy-100">CSS3</span>
-                            <span class="px-3 py-1 bg-navy-50 text-navy-800 rounded-full text-sm font-medium border border-navy-100">JavaScript</span>
-                            <span class="px-3 py-1 bg-navy-50 text-navy-800 rounded-full text-sm font-medium border border-navy-100">Responsive Web Design</span>
-                            <span class="px-3 py-1 bg-navy-50 text-navy-800 rounded-full text-sm font-medium border border-navy-100">UI/UX</span>
+                            <span
+                                class="px-3 py-1 bg-navy-50 text-navy-800 rounded-full text-sm font-medium border border-navy-100">HTML5</span>
+                            <span
+                                class="px-3 py-1 bg-navy-50 text-navy-800 rounded-full text-sm font-medium border border-navy-100">CSS3</span>
+                            <span
+                                class="px-3 py-1 bg-navy-50 text-navy-800 rounded-full text-sm font-medium border border-navy-100">JavaScript</span>
+                            <span
+                                class="px-3 py-1 bg-navy-50 text-navy-800 rounded-full text-sm font-medium border border-navy-100">Responsive
+                                Web Design</span>
+                            <span
+                                class="px-3 py-1 bg-navy-50 text-navy-800 rounded-full text-sm font-medium border border-navy-100">UI/UX</span>
                         </div>
                     </div>
 
                     <!-- Skill Category -->
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                        <h3 class="text-xl font-semibold text-navy-800 mb-4 border-b border-slate-100 pb-2">E-Commerce</h3>
+                        <h3 class="text-xl font-semibold text-navy-800 mb-4 border-b border-slate-100 pb-2">E-Commerce
+                        </h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-50 text-blue-800 rounded-full text-sm font-medium border border-blue-100">Shopify</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-800 rounded-full text-sm font-medium border border-blue-100">Liquid</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-800 rounded-full text-sm font-medium border border-blue-100">WordPress</span>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-800 rounded-full text-sm font-medium border border-blue-100">Elementor</span>
+                            <span
+                                class="px-3 py-1 bg-blue-50 text-blue-800 rounded-full text-sm font-medium border border-blue-100">Shopify</span>
+                            <span
+                                class="px-3 py-1 bg-blue-50 text-blue-800 rounded-full text-sm font-medium border border-blue-100">Liquid</span>
+                            <span
+                                class="px-3 py-1 bg-blue-50 text-blue-800 rounded-full text-sm font-medium border border-blue-100">WordPress</span>
+                            <span
+                                class="px-3 py-1 bg-blue-50 text-blue-800 rounded-full text-sm font-medium border border-blue-100">Elementor</span>
                         </div>
                     </div>
 
                     <!-- Skill Category -->
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                        <h3 class="text-xl font-semibold text-navy-800 mb-4 border-b border-slate-100 pb-2">Mobile Development</h3>
+                        <h3 class="text-xl font-semibold text-navy-800 mb-4 border-b border-slate-100 pb-2">Mobile
+                            Development</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-teal-50 text-teal-800 rounded-full text-sm font-medium border border-teal-100">Flutter</span>
-                            <span class="px-3 py-1 bg-teal-50 text-teal-800 rounded-full text-sm font-medium border border-teal-100">Dart</span>
-                            <span class="px-3 py-1 bg-teal-50 text-teal-800 rounded-full text-sm font-medium border border-teal-100">BLoC / MVVM</span>
-                            <span class="px-3 py-1 bg-teal-50 text-teal-800 rounded-full text-sm font-medium border border-teal-100">Firebase</span>
+                            <span
+                                class="px-3 py-1 bg-teal-50 text-teal-800 rounded-full text-sm font-medium border border-teal-100">Flutter</span>
+                            <span
+                                class="px-3 py-1 bg-teal-50 text-teal-800 rounded-full text-sm font-medium border border-teal-100">Dart</span>
+                            <span
+                                class="px-3 py-1 bg-teal-50 text-teal-800 rounded-full text-sm font-medium border border-teal-100">BLoC
+                                / MVVM</span>
+                            <span
+                                class="px-3 py-1 bg-teal-50 text-teal-800 rounded-full text-sm font-medium border border-teal-100">Firebase</span>
                         </div>
                     </div>
 
                     <!-- Skill Category -->
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                        <h3 class="text-xl font-semibold text-navy-800 mb-4 border-b border-slate-100 pb-2">APIs & Backend</h3>
+                        <h3 class="text-xl font-semibold text-navy-800 mb-4 border-b border-slate-100 pb-2">APIs &
+                            Backend</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-purple-50 text-purple-800 rounded-full text-sm font-medium border border-purple-100">RESTful APIs</span>
-                            <span class="px-3 py-1 bg-purple-50 text-purple-800 rounded-full text-sm font-medium border border-purple-100">JSON</span>
-                            <span class="px-3 py-1 bg-purple-50 text-purple-800 rounded-full text-sm font-medium border border-purple-100">SQL / SQLite</span>
-                            <span class="px-3 py-1 bg-purple-50 text-purple-800 rounded-full text-sm font-medium border border-purple-100">Firebase</span>
+                            <span
+                                class="px-3 py-1 bg-purple-50 text-purple-800 rounded-full text-sm font-medium border border-purple-100">RESTful
+                                APIs</span>
+                            <span
+                                class="px-3 py-1 bg-purple-50 text-purple-800 rounded-full text-sm font-medium border border-purple-100">JSON</span>
+                            <span
+                                class="px-3 py-1 bg-purple-50 text-purple-800 rounded-full text-sm font-medium border border-purple-100">SQL
+                                / SQLite</span>
+                            <span
+                                class="px-3 py-1 bg-purple-50 text-purple-800 rounded-full text-sm font-medium border border-purple-100">Firebase</span>
                         </div>
                     </div>
 
                     <!-- Skill Category -->
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                        <h3 class="text-xl font-semibold text-navy-800 mb-4 border-b border-slate-100 pb-2">AI / ML & Programming</h3>
+                        <h3 class="text-xl font-semibold text-navy-800 mb-4 border-b border-slate-100 pb-2">AI / ML &
+                            Programming</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-indigo-50 text-indigo-800 rounded-full text-sm font-medium border border-indigo-100">Python</span>
-                            <span class="px-3 py-1 bg-indigo-50 text-indigo-800 rounded-full text-sm font-medium border border-indigo-100">C++</span>
-                            <span class="px-3 py-1 bg-indigo-50 text-indigo-800 rounded-full text-sm font-medium border border-indigo-100">NumPy & Pandas</span>
-                            <span class="px-3 py-1 bg-indigo-50 text-indigo-800 rounded-full text-sm font-medium border border-indigo-100">Machine Learning</span>
+                            <span
+                                class="px-3 py-1 bg-indigo-50 text-indigo-800 rounded-full text-sm font-medium border border-indigo-100">Python</span>
+                            <span
+                                class="px-3 py-1 bg-indigo-50 text-indigo-800 rounded-full text-sm font-medium border border-indigo-100">C++</span>
+                            <span
+                                class="px-3 py-1 bg-indigo-50 text-indigo-800 rounded-full text-sm font-medium border border-indigo-100">NumPy
+                                & Pandas</span>
+                            <span
+                                class="px-3 py-1 bg-indigo-50 text-indigo-800 rounded-full text-sm font-medium border border-indigo-100">Machine
+                                Learning</span>
                         </div>
                     </div>
 
                     <!-- Skill Category -->
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                        <h3 class="text-xl font-semibold text-navy-800 mb-4 border-b border-slate-100 pb-2">Tools & Others</h3>
+                        <h3 class="text-xl font-semibold text-navy-800 mb-4 border-b border-slate-100 pb-2">Tools &
+                            Others</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-slate-100 text-slate-800 rounded-full text-sm font-medium border border-slate-200">Git & GitHub</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-800 rounded-full text-sm font-medium border border-slate-200">Figma</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-800 rounded-full text-sm font-medium border border-slate-200">Unity</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-800 rounded-full text-sm font-medium border border-slate-200">Godot</span>
+                            <span
+                                class="px-3 py-1 bg-slate-100 text-slate-800 rounded-full text-sm font-medium border border-slate-200">Git
+                                & GitHub</span>
+                            <span
+                                class="px-3 py-1 bg-slate-100 text-slate-800 rounded-full text-sm font-medium border border-slate-200">Figma</span>
+                            <span
+                                class="px-3 py-1 bg-slate-100 text-slate-800 rounded-full text-sm font-medium border border-slate-200">Unity</span>
+                            <span
+                                class="px-3 py-1 bg-slate-100 text-slate-800 rounded-full text-sm font-medium border border-slate-200">Godot</span>
                         </div>
                     </div>
                 </div>
@@ -231,82 +306,113 @@
 
                 <div class="space-y-8">
                     <!-- Experience Card 1 -->
-                    <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-200 relative overflow-hidden">
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-200 relative overflow-hidden">
                         <div class="absolute top-0 left-0 w-1.5 h-full bg-blue-600"></div>
                         <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                             <div>
-                                <h3 class="text-xl font-bold text-navy-900">Frontend & E-Commerce Specialist (Part-Time)</h3>
-                                <p class="text-lg font-medium text-slate-600"><i class="fas fa-building mr-2 text-sm text-slate-400"></i>Weagles Marketing | Alexandria, Egypt</p>
+                                <h3 class="text-xl font-bold text-navy-900">Frontend & E-Commerce Specialist (Part-Time)
+                                </h3>
+                                <p class="text-lg font-medium text-slate-600"><i
+                                        class="fas fa-building mr-2 text-sm text-slate-400"></i>Weagles Marketing |
+                                    Alexandria, Egypt</p>
                             </div>
-                            <span class="mt-2 md:mt-0 bg-blue-50 text-blue-700 font-semibold px-3 py-1 rounded-lg text-sm border border-blue-100 whitespace-nowrap">Dec 2025 – Present</span>
+                            <span
+                                class="mt-2 md:mt-0 bg-blue-50 text-blue-700 font-semibold px-3 py-1 rounded-lg text-sm border border-blue-100 whitespace-nowrap">Dec
+                                2025 – Present</span>
                         </div>
                         <ul class="list-disc list-inside text-slate-600 space-y-2 mt-4 ml-1">
-                            <li>Develop and maintain responsive business and e-commerce websites using WordPress, Elementor, Shopify Liquid, HTML, CSS, and JavaScript.</li>
-                            <li>Customize Shopify storefronts and improve UI/UX, responsive layouts, checkout experiences, and e-commerce functionality.</li>
-                            <li>Work directly with clients and internal teams to translate business requirements into frontend features and website updates.</li>
-                            <li>Troubleshoot website performance, responsive design, forms, domains, hosting, and technical configuration issues.</li>
-                            <li>Support website migrations and business technology operations, including domain/DNS configuration and Google Workspace setup.</li>
+                            <li>Develop and maintain responsive business and e-commerce websites using WordPress,
+                                Elementor, Shopify Liquid, HTML, CSS, and JavaScript.</li>
+                            <li>Customize Shopify storefronts and improve UI/UX, responsive layouts, checkout
+                                experiences, and e-commerce functionality.</li>
+                            <li>Work directly with clients and internal teams to translate business requirements into
+                                frontend features and website updates.</li>
+                            <li>Troubleshoot website performance, responsive design, forms, domains, hosting, and
+                                technical configuration issues.</li>
+                            <li>Support website migrations and business technology operations, including domain/DNS
+                                configuration and Google Workspace setup.</li>
                         </ul>
                     </div>
 
                     <!-- Experience Card 2 -->
-                    <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-200 relative overflow-hidden">
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-200 relative overflow-hidden">
                         <div class="absolute top-0 left-0 w-1.5 h-full bg-blue-600"></div>
                         <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                             <div>
                                 <h3 class="text-xl font-bold text-navy-900">English Coding Instructor (Remote)</h3>
-                                <p class="text-lg font-medium text-slate-600"><i class="fas fa-chalkboard-teacher mr-2 text-sm text-slate-400"></i>iSchool | Cairo, Egypt</p>
+                                <p class="text-lg font-medium text-slate-600"><i
+                                        class="fas fa-chalkboard-teacher mr-2 text-sm text-slate-400"></i>iSchool |
+                                    Cairo, Egypt</p>
                             </div>
-                            <span class="mt-2 md:mt-0 bg-blue-50 text-blue-700 font-semibold px-3 py-1 rounded-lg text-sm border border-blue-100 whitespace-nowrap">Mar 2025 – Present</span>
+                            <span
+                                class="mt-2 md:mt-0 bg-blue-50 text-blue-700 font-semibold px-3 py-1 rounded-lg text-sm border border-blue-100 whitespace-nowrap">Mar
+                                2025 – Present</span>
                         </div>
                         <ul class="list-disc list-inside text-slate-600 space-y-2 mt-4 ml-1">
-                            <li>Deliver practical programming instruction to K–12 students using project-based learning and live coding.</li>
-                            <li>Teach HTML, CSS, JavaScript, Flutter, Dart, Python, AI/ML fundamentals, REST APIs, SQL/SQLite, Unity, and Godot.</li>
-                            <li>Guide students through building programming projects, debugging code, applying OOP concepts, and developing problem-solving skills.</li>
-                            <li>Deliver technical instruction in AI and Machine Learning fundamentals, including Python-based data and AI concepts.</li>
+                            <li>Deliver practical programming instruction to K–12 students using project-based learning
+                                and live coding.</li>
+                            <li>Teach HTML, CSS, JavaScript, Flutter, Dart, Python, AI/ML fundamentals, REST APIs,
+                                SQL/SQLite, Unity, and Godot.</li>
+                            <li>Guide students through building programming projects, debugging code, applying OOP
+                                concepts, and developing problem-solving skills.</li>
+                            <li>Deliver technical instruction in AI and Machine Learning fundamentals, including
+                                Python-based data and AI concepts.</li>
                         </ul>
                     </div>
 
                     <!-- Experience Card 3 -->
-                    <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-200 relative overflow-hidden">
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-200 relative overflow-hidden">
                         <div class="absolute top-0 left-0 w-1.5 h-full bg-slate-300"></div>
                         <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                             <div>
                                 <h3 class="text-xl font-bold text-navy-900">Flutter Bootcamp</h3>
-                                <p class="text-lg font-medium text-slate-600"><i class="fas fa-laptop-code mr-2 text-sm text-slate-400"></i>Remote</p>
+                                <p class="text-lg font-medium text-slate-600"><i
+                                        class="fas fa-laptop-code mr-2 text-sm text-slate-400"></i>Remote</p>
                             </div>
                             <span class="mt-2 md:mt-0 text-slate-500 font-semibold text-sm">Jan 2024</span>
                         </div>
                         <ul class="list-disc list-inside text-slate-600 space-y-2 mt-2 ml-1">
-                            <li>Developed Flutter applications using Dart, BLoC/MVVM architecture, RESTful APIs, JSON, and Git.</li>
-                            <li>Implemented API integrations and contributed to feature development and branch management.</li>
+                            <li>Developed Flutter applications using Dart, BLoC/MVVM architecture, RESTful APIs, JSON,
+                                and Git.</li>
+                            <li>Implemented API integrations and contributed to feature development and branch
+                                management.</li>
                         </ul>
                     </div>
-                    
+
                     <!-- Experience Card 4 -->
-                    <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-200 relative overflow-hidden">
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-200 relative overflow-hidden">
                         <div class="absolute top-0 left-0 w-1.5 h-full bg-slate-300"></div>
                         <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                             <div>
                                 <h3 class="text-xl font-bold text-navy-900">Cold Caller – Real Estate</h3>
-                                <p class="text-lg font-medium text-slate-600"><i class="fas fa-headset mr-2 text-sm text-slate-400"></i>Remote</p>
+                                <p class="text-lg font-medium text-slate-600"><i
+                                        class="fas fa-headset mr-2 text-sm text-slate-400"></i>Remote</p>
                             </div>
                             <span class="mt-2 md:mt-0 text-slate-500 font-semibold text-sm">Jan 2024 – Mar 2025</span>
                         </div>
-                        <p class="text-slate-600 ml-1">Executed high-volume outbound campaigns to identify, qualify, and pipeline potential real estate leads.</p>
+                        <p class="text-slate-600 ml-1">Executed high-volume outbound campaigns to identify, qualify, and
+                            pipeline potential real estate leads.</p>
                     </div>
 
                     <!-- Experience Card 5 -->
-                    <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-200 relative overflow-hidden">
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-200 relative overflow-hidden">
                         <div class="absolute top-0 left-0 w-1.5 h-full bg-slate-300"></div>
                         <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                             <div>
                                 <h3 class="text-xl font-bold text-navy-900">Customer Care Specialist – Lyft Account</h3>
-                                <p class="text-lg font-medium text-slate-600"><i class="fas fa-headset mr-2 text-sm text-slate-400"></i>Sutherland | Alexandria, Egypt</p>
+                                <p class="text-lg font-medium text-slate-600"><i
+                                        class="fas fa-headset mr-2 text-sm text-slate-400"></i>Sutherland | Alexandria,
+                                    Egypt</p>
                             </div>
                             <span class="mt-2 md:mt-0 text-slate-500 font-semibold text-sm">Jan 2021 – Jan 2024</span>
                         </div>
-                        <p class="text-slate-600 ml-1">Provided multichannel customer support for US and Canadian accounts, handling complex account verification, payments, rides, and safety issues.</p>
+                        <p class="text-slate-600 ml-1">Provided multichannel customer support for US and Canadian
+                            accounts, handling complex account verification, payments, rides, and safety issues.</p>
                     </div>
                 </div>
             </div>
@@ -320,91 +426,343 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Project 1 -->
-                    <div class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
-                        <div class="bg-navy-900 p-6 flex justify-between items-center group-hover:bg-navy-800 transition-colors">
+                    <div
+                        class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+                        <div
+                            class="bg-navy-900 p-6 flex justify-between items-center group-hover:bg-navy-800 transition-colors">
                             <i class="fas fa-car text-3xl text-blue-400"></i>
-                            <a href="https://github.com/ritamagdy22" target="_blank" class="text-white hover:text-blue-300 transition-colors">
+                            <a href="https://github.com/ritamagdy22/SmartParking_App_IsDone" target="_blank"
+                                class="text-white hover:text-blue-300 transition-colors">
                                 <i class="fab fa-github text-xl"></i>
                             </a>
                         </div>
                         <div class="p-6 flex-grow">
                             <h3 class="text-xl font-bold text-navy-900 mb-2">Smart Parking App (Graduation)</h3>
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">Flutter</span>
-                                <span class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">MVVM</span>
-                                <span class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">AI Pricing</span>
+                                <span
+                                    class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">Flutter</span>
+                                <span
+                                    class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">MVVM</span>
+                                <span class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">AI
+                                    Pricing</span>
                             </div>
                             <ul class="text-slate-600 text-sm list-disc list-inside space-y-2">
-                                <li>Led the Flutter development team, managing API integrations, workflows, and branch merging on GitHub.</li>
-                                <li>Architected the app using MVVM, OOP principles, dependency injection, and scalable state management.</li>
-                                <li>Implemented dynamic pricing based on AI, reservation flows, and payment modules.</li>
+                                <li>Led the Flutter development team, managing API integrations, workflows, and branch
+                                    merging on GitHub.</li>
+                                <li>Architected the app using MVVM, OOP principles, dependency injection, and scalable
+                                    state management.</li>
+                                <li>Implemented dynamic pricing based on AI, reservation flows, and payment modules.
+                                </li>
                             </ul>
+
+
+                            <!-- Smart parking App -->
+                            <div class="pt-4 border-t border-slate-100 flex gap-4">
+                                <a href="https://github.com/ritamagdy22/SmartParking_App_IsDone" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 hover:underline">
+                                    <span>PGM For Global Export</span>
+                                    <i class="fas fa-external-link-alt text-xs"></i>
+                                </a>
+
+
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Project 2 -->
-                    <div class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
-                        <div class="bg-navy-900 p-6 flex justify-between items-center group-hover:bg-navy-800 transition-colors">
-                            <i class="fas fa-mobile-alt text-3xl text-teal-400"></i>
-                            <a href="https://github.com/ritamagdy22/E-Commerce-Global-Export" target="_blank" class="text-white hover:text-teal-300 transition-colors">
-                                <i class="fab fa-github text-xl"></i>
 
-                           
-                            </a>
-                        </div>
-                        <div class="p-6 flex-grow">
-                            <h3 class="text-xl font-bold text-navy-900 mb-2">E-Commerce Mobile App</h3>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">Flutter</span>
-                                <span class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">BLoC</span>
-                                <span class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">REST API</span>
-                            </div>
-                            <ul class="text-slate-600 text-sm list-disc list-inside space-y-2">
-                                <li>Freelance Project .</li>
-                                <li>Customer asked for full e-commerce app with paymenta bout his global website.</li>
-                                <li>Implemented authentication, product catalog, detailed views, shopping cart management, and profile settings.</li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <!-- Project 3 -->
-                    <div class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
-                        <div class="bg-navy-900 p-6 flex justify-between items-center group-hover:bg-navy-800 transition-colors">
+
+
+
+                    <!-- Cleo Project Card -->
+                    <div
+                        class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+                        <!-- Header / Icon Banner -->
+                        <div
+                            class="bg-navy-900 p-6 flex justify-between items-center group-hover:bg-navy-800 transition-colors">
                             <i class="fas fa-shopping-bag text-3xl text-purple-400"></i>
                             <div class="flex space-x-3">
                                 <i class="fas fa-link text-white opacity-50"></i>
                             </div>
                         </div>
-                       <div class="p-6 flex-grow flex flex-col justify-between">
-    <div>
-        <h3 class="text-xl font-bold text-navy-900 mb-2">Interwoven Sites</h3>
-        <div class="flex flex-wrap gap-2 mb-4">
-            <span class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">Shopify</span>
-            <span class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">Liquid</span>
-            <span class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">UI/UX</span>
-        </div>
-        <ul class="text-slate-600 text-sm list-disc list-inside space-y-2 mb-4">
-            <li>Customized Shopify Liquid templates, storefront layouts, discount engines, and checkout UI/UX.</li>
-            <li>Handled e-commerce processes and client requirements including user flows and marketing integrations.</li>
-            <li>Integrated AI assistants and custom marketing tools directly into the storefront.</li>
-        </ul>
-    </div>
 
-    <!-- Live Links Area -->
-    <div class="pt-4 border-t border-slate-100 flex gap-4">
-        <a href="https://interwovenap.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 hover:underline">
-            <span>Visit Interwoven</span>
-            <i class="fas fa-external-link-alt text-xs"></i>
-        </a>
-        <a href="https://cleo-us.store" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 hover:underline">
-            <span>Visit Cleo</span>
-            <i class="fas fa-external-link-alt text-xs"></i>
-        </a>
-    </div>
-</div>
+                        <!-- Content Area -->
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-navy-900 mb-2">Cleo Sites</h3>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span
+                                        class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">Shopify</span>
+                                    <span
+                                        class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">Liquid</span>
+                                    <span
+                                        class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">UI/UX</span>
+                                </div>
+                                <ul class="text-slate-600 text-sm list-disc list-inside space-y-2 mb-4">
+                                    <li>Engineered the Cleo Shopify platform through custom Liquid templates, responsive
+                                        storefront layouts, and tailored checkout flows.</li>
+                                    <li>Managed end-to-end e-commerce operations by configuring complex promotional
+                                        rules, discount logic, and campaign-driven user journeys.</li>
+                                    <li>Integrated interactive AI tools and marketing extensions into the frontend to
+                                        track ongoing campaigns and satisfy client goals.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Live Links Area -->
+                            <div class="pt-4 border-t border-slate-100 flex gap-4">
+                                <a href="https://cleo-us.store/" target="_blank" rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 hover:underline">
+                                    <span>Visit Cleo</span>
+                                    <i class="fas fa-external-link-alt text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- Hack Sack -->
+                    <div
+                        class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+                        <!-- Header / Icon Banner -->
+                        <div
+                            class="bg-navy-900 p-6 flex justify-between items-center group-hover:bg-navy-800 transition-colors">
+                            <i class="fas fa-shopping-bag text-3xl text-purple-400"></i>
+                            <div class="flex space-x-3">
+                                <i class="fas fa-link text-white opacity-50"></i>
+                            </div>
+                        </div>
+
+                        <!-- Content Area -->
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-navy-900 mb-2">Hack Sack</h3>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span
+                                        class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">Html
+                                        , CSS, Javascript</span>
+
+                                </div>
+                                <ul class="text-slate-600 text-sm list-disc list-inside space-y-2 mb-4">
+                                    <li>Developed and launched a responsive product landing page with custom sections
+                                        for problem-solution framing, product specs, and usage workflows.</li>
+                                    <li>Configured domain DNS, cPanel hosting, nameserver mapping, and AutoSSL
+                                        encryption to ensure secure and reliable website deployment.</li>
+                                    <li>Integrated lead-generation workflows and CTA triggers including live demo
+                                        booking, contact forms, and order inquiry flows.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Live Links Area -->
+                            <div class="pt-4 border-t border-slate-100 flex gap-4">
+                                <a href="https://hack-sack.com/" target="_blank" rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 hover:underline">
+                                    <span>Visit hack-sack</span>
+                                    <i class="fas fa-external-link-alt text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- Project 2 -->
+                    <div
+                        class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+                        <div
+                            class="bg-navy-900 p-6 flex justify-between items-center group-hover:bg-navy-800 transition-colors">
+                            <i class="fas fa-mobile-alt text-3xl text-teal-400"></i>
+                            <a href="https://github.com/ritamagdy22/E-Commerce-Global-Export" target="_blank"
+                                class="text-white hover:text-teal-300 transition-colors">
+                                <i class="fab fa-github text-xl"></i>
+
+
+                            </a>
+                        </div>
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-bold text-navy-900 mb-2">E-Commerce Mobile App</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">Flutter</span>
+                                <span
+                                    class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">BLoC</span>
+                                <span class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">REST
+                                    API</span>
+                            </div>
+                            <ul class="text-slate-600 text-sm list-disc list-inside space-y-2">
+                                <li>Freelance Project .</li>
+                                <li>Customer asked for full e-commerce app with paymenta bout his global website.</li>
+                                <li>Implemented authentication, product catalog, detailed views, shopping cart
+                                    management, and profile settings.</li>
+                            </ul>
+                            <!-- Live PGM for global Export Area -->
+                            <div class="pt-4 border-t border-slate-100 flex gap-4">
+                                <a href="https://github.com/ritamagdy22/E-Commerce-Global-Export" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 hover:underline">
+                                    <span>PGM For Global Export</span>
+                                    <i class="fas fa-external-link-alt text-xs"></i>
+                                </a>
+
+
+                            </div>
+
+                        </div>
+
 
 
                     </div>
+
+                    <!-- Project updated 1 -->
+                    <div
+                        class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+                        <div
+                            class="bg-navy-900 p-6 flex justify-between items-center group-hover:bg-navy-800 transition-colors">
+                            <i class="fas fa-mobile-alt text-3xl text-teal-400"></i>
+                            <a href="https://github.com/ritamagdy22/Rocking-Code" target="_blank"
+                                class="text-white hover:text-teal-300 transition-colors">
+                                <i class="fab fa-github text-xl"></i>
+
+
+                            </a>
+                        </div>
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-bold text-navy-900 mb-2">Educational Website </h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">Web</span>
+
+                            </div>
+                            <ul class="text-slate-600 text-sm list-disc list-inside space-y-2">
+                                <li>Freelance Project .</li>
+                                <li>Customer asked For educational website connected to calendly and google Calender
+                                    with
+                                    specific flow up on student updates and meetings
+                                <li>
+                                <li>Implemented authentication, product catalog, detailed views, shopping cart
+                                    management, and profile settings.</li>
+                            </ul>
+
+
+                            <!-- Live Educational Area -->
+                            <div class="pt-4 border-t border-slate-100 flex gap-4">
+                                <a href="https://rocking-code.ritamagdy99.workers.dev/" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 hover:underline">
+                                    <span>Visit Rocking Code</span>
+                                    <i class="fas fa-external-link-alt text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div
+                        class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+                        <div
+                            class="bg-navy-900 p-6 flex justify-between items-center group-hover:bg-navy-800 transition-colors">
+                            <i class="fas fa-shopping-bag text-3xl text-purple-400"></i>
+                            <div class="flex space-x-3">
+                                <i class="fas fa-link text-white opacity-50"></i>
+                            </div>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-navy-900 mb-2">Interwoven Sites</h3>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span
+                                        class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">Shopify</span>
+                                    <span
+                                        class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">Liquid</span>
+                                    <span
+                                        class="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">UI/UX</span>
+                                </div>
+                                <ul class="text-slate-600 text-sm list-disc list-inside space-y-2 mb-4">
+                                    <li>Customized Shopify Liquid templates, storefront layouts, discount engines, and
+                                        checkout UI/UX.</li>
+                                    <li>Handled e-commerce processes and client requirements including user flows and
+                                        marketing integrations.</li>
+                                    <li>Integrated AI assistants and custom marketing tools directly into the
+                                        storefront.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Live Links Area -->
+                            <div class="pt-4 border-t border-slate-100 flex gap-4">
+                                <a href="https://interwovenap.com" target="_blank" rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 hover:underline">
+                                    <span>Visit Interwoven</span>
+                                    <i class="fas fa-external-link-alt text-xs"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
             </div>
         </section>
@@ -412,7 +770,7 @@
         <section id="education" class="section-padding bg-white border-y border-slate-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    
+
                     <!-- Education -->
                     <div>
                         <h2 class="text-3xl font-bold text-navy-900 mb-8 flex items-center">
@@ -422,13 +780,18 @@
                             <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
                                 <h3 class="text-xl font-bold text-navy-900">B.Sc. in Computer Science</h3>
                                 <p class="text-blue-600 font-medium mb-2">Alexandria University | 2019 – 2024</p>
-                                <p class="text-sm text-slate-600 mb-3"><span class="font-semibold text-slate-800">GPA:</span> 3.08 / 4.00 (Good)</p>
+                                <p class="text-sm text-slate-600 mb-3"><span
+                                        class="font-semibold text-slate-800">GPA:</span> 3.08 / 4.00 (Good)</p>
                                 <div class="bg-white p-4 rounded-lg border border-slate-200 mt-3">
-                                    <h4 class="font-semibold text-navy-800 mb-1 text-sm"><i class="fas fa-star text-yellow-500 mr-1"></i> Graduation Project: Smart Parking App</h4>
-                                    <p class="text-sm text-slate-600">Developed a Flutter-based app with AI-driven pricing based on demand/events. Integrated REST APIs, MVVM. <strong>Grade: Excellent.</strong></p>
+                                    <h4 class="font-semibold text-navy-800 mb-1 text-sm"><i
+                                            class="fas fa-star text-yellow-500 mr-1"></i> Graduation Project: Smart
+                                        Parking App</h4>
+                                    <p class="text-sm text-slate-600">Developed a Flutter-based app with AI-driven
+                                        pricing based on demand/events. Integrated REST APIs, MVVM. <strong>Grade:
+                                            Excellent.</strong></p>
                                 </div>
                             </div>
-                            
+
                             <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
                                 <h3 class="text-xl font-bold text-navy-900">Secondary School Certificate</h3>
                                 <p class="text-blue-600 font-medium">Saint Vincent Miami Secondary School | 2019</p>
@@ -442,9 +805,10 @@
                         <h2 class="text-3xl font-bold text-navy-900 mb-8 flex items-center">
                             <i class="fas fa-certificate text-blue-600 mr-3"></i> Certifications & Languages
                         </h2>
-                        
+
                         <div class="mb-8">
-                            <h3 class="text-lg font-bold text-slate-800 mb-4 border-b border-slate-200 pb-2">Certifications</h3>
+                            <h3 class="text-lg font-bold text-slate-800 mb-4 border-b border-slate-200 pb-2">
+                                Certifications</h3>
                             <ul class="space-y-4">
                                 <li class="flex items-start">
                                     <i class="fas fa-award text-blue-600 mt-1 mr-3 text-xl"></i>
@@ -463,7 +827,7 @@
                                 <li class="flex items-start">
                                     <i class="fas fa-spinner fa-spin text-blue-600 mt-1 mr-3 text-xl"></i>
                                     <div>
-                                        <p class="font-bold text-navy-900">React Development</p>
+                                        <p class="font-bold text-navy-900">AI </p>
                                         <p class="text-sm text-slate-600">Currently studying</p>
                                     </div>
                                 </li>
@@ -471,7 +835,8 @@
                         </div>
 
                         <div>
-                            <h3 class="text-lg font-bold text-slate-800 mb-4 border-b border-slate-200 pb-2">Languages</h3>
+                            <h3 class="text-lg font-bold text-slate-800 mb-4 border-b border-slate-200 pb-2">Languages
+                            </h3>
                             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                                 <div class="bg-slate-50 p-4 rounded-lg text-center border border-slate-200">
                                     <p class="font-bold text-navy-900 text-lg">Arabic</p>
@@ -499,30 +864,36 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold text-white mb-6">Let's Connect</h2>
             <p class="text-lg text-slate-400 mb-10 max-w-2xl mx-auto">
-                Whether you have a project in mind, an opportunity to discuss, or just want to say hi, my inbox is always open.
+                Whether you have a project in mind, an opportunity to discuss, or just want to say hi, my inbox is
+                always open.
             </p>
-            
+
             <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-12">
-                <a href="mailto:ritamagdy99@gmail.com" class="flex items-center space-x-3 bg-navy-800 hover:bg-blue-600 transition-colors px-6 py-3 rounded-lg w-full sm:w-auto text-white">
+                <a href="mailto:ritamagdy99@gmail.com"
+                    class="flex items-center space-x-3 bg-navy-800 hover:bg-blue-600 transition-colors px-6 py-3 rounded-lg w-full sm:w-auto text-white">
                     <i class="fas fa-envelope text-xl"></i>
                     <span class="font-medium">ritamagdy99@gmail.com</span>
                 </a>
-                <a href="tel:+201060542538" class="flex items-center space-x-3 bg-navy-800 hover:bg-blue-600 transition-colors px-6 py-3 rounded-lg w-full sm:w-auto text-white">
+                <a href="tel:+201060542538"
+                    class="flex items-center space-x-3 bg-navy-800 hover:bg-blue-600 transition-colors px-6 py-3 rounded-lg w-full sm:w-auto text-white">
                     <i class="fas fa-phone-alt text-xl"></i>
                     <span class="font-medium">+20 106 054 2538</span>
                 </a>
             </div>
 
             <div class="flex justify-center space-x-8 mb-12">
-                <a href="https://github.com/ritamagdy22" target="_blank" class="text-slate-400 hover:text-white transition-colors text-3xl">
+                <a href="https://github.com/ritamagdy22" target="_blank"
+                    class="text-slate-400 hover:text-white transition-colors text-3xl">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/rita-magdy" target="_blank" class="text-slate-400 hover:text-blue-400 transition-colors text-3xl">
+                <a href="https://www.linkedin.com/in/rita-magdy-033054268/" target="_blank"
+                    class="text-slate-400 hover:text-blue-400 transition-colors text-3xl">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
 
-            <div class="border-t border-navy-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+            <div
+                class="border-t border-navy-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center text-sm">
                 <p>&copy; <span id="year"></span> Rita Magdy</p>
                 <p class="mt-2 md:mt-0">Built with <i class="fas fa-heart text-red-500 mx-1"></i> and Tailwind CSS</p>
             </div>
@@ -550,4 +921,5 @@
         });
     </script>
 </body>
+
 </html>
